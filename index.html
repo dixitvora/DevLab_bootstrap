@@ -23,7 +23,7 @@
                     <li class="nav-item"><a href="#home" class="nav-link">Home</a> </li>
                     <li class="nav-item"><a href="#explore-head-section" class="nav-link">Explore</a> </li>
                     <li class="nav-item"><a href="#create-head-section" class="nav-link">Create</a> </li>
-                    <li class="nav-item"><a href="#share-head-sectoin" class="nav-link">Share</a> </li>
+                    <li class="nav-item"><a href="#share-head-section" class="nav-link">Share</a> </li>
 
                 </ul>
             </div>
@@ -248,7 +248,7 @@
     <footer id="main-footer" class="bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-text-center py-4">
+                <div class="col text-center py-4">
                     <h3>DevLAB</h3>
                     <p>Copyright &copy; 
                         <span id="year"></span>
@@ -262,8 +262,39 @@
     <!-- Footer section ends  -->
 
 
+    <!-- Contact Modal  -->
 
-
+        <div class="modal fade text-dark" id="contactModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact Us</h5>
+                        <button class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">message</label>
+                                <textarea class="form-control"></textarea>
+                            </div>                            
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary btn-block">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

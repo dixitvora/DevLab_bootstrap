@@ -9,8 +9,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
-<body>
-    <h1></h1>
+<body data-spy="scroll" data-target="#main-nav"  id="home">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">DevLAB</a>
+            <button class="nabbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a> </li>
+                    <li class="nav-item"><a href="#explore-head-section" class="nav-link">Explore</a> </li>
+                    <li class="nav-item"><a href="#create-head-section" class="nav-link">Create</a> </li>
+                    <li class="nav-item"><a href="#share-head-sectoin" class="nav-link">Share</a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

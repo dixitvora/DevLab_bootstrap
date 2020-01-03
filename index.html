@@ -15,12 +15,12 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
         <div class="container">
             <a href="index.html" class="navbar-brand">DevLAB</a>
-            <button class="nabbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a> </li>
+                    <li class="nav-item"><a href="#home-section" class="nav-link">Home</a> </li>
                     <li class="nav-item"><a href="#explore-head-section" class="nav-link">Explore</a> </li>
                     <li class="nav-item"><a href="#create-head-section" class="nav-link">Create</a> </li>
                     <li class="nav-item"><a href="#share-head-section" class="nav-link">Share</a> </li>
@@ -305,5 +305,25 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    
+    <script>
+    // Get the current year for the copyrignt 
+    $('#year').text(new Date().getFullYear());
+    // Init Scrollspy 
+    $('body').scrollspy({target: '#main-nav'})
+    // Smooth Scrolling 
+       $(".nav a").on('click', function (event) {
+          
+               event.preventDefault();
+
+               const hash = this.hash;
+
+               $('html, body').delay(500).animate({
+                   scrollTop: $(hash).offset().top
+               }, 8000,"linear");
+           
+       });
+
+    </script>
 </body>
 </html>
